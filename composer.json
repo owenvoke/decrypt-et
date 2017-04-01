@@ -1,0 +1,10 @@
+{
+  "name": "pxgamer/decrypt-et",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "pxgamer\\DecryptET\\": "src/"
+    }
+  }
+}
