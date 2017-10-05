@@ -1,6 +1,6 @@
 {
   "name": "pxgamer/decrypt-et",
-  "description": "A tool for decrypting ExtraTorrent's js-based page encryption."
+  "description": "A tool for decrypting ExtraTorrent's js-based page encryption.",
   "type": "library",
   "license": "MIT",
   "autoload": {
