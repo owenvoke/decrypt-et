@@ -9,7 +9,7 @@ This is primarily to be used when creating a proxy of ET content.
 
 ## Example
 
-```
+```php
 <?php
 
 require '../vendor/autoload.php';
