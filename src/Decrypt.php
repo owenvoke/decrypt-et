@@ -47,8 +47,6 @@ class Decrypt extends Implementations
             [
                 CURLOPT_URL => $this->base_url . $url_path,
                 CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_SSL_VERIFYHOST => false,
-                CURLOPT_SSL_VERIFYPEER => false
             ]
         );
 
