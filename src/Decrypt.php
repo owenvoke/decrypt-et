@@ -8,6 +8,8 @@ namespace pxgamer\DecryptET;
  */
 class Decrypt extends Implementations
 {
+    public const MAX_DECRYPT_PASSES = 3;
+
     /**
      * @var string
      */
@@ -68,7 +70,7 @@ class Decrypt extends Implementations
         $md5 = array();
         $md5[0] = md5($concatenated_pass, true);
         $result = $md5[0];
-        for ($i = 1; $i < 3; $i++) {
+        for ($i = 1; $i < self::MAX_DECRYPT_PASSES; $i++) {
             $md5[$i] = md5($md5[$i - 1] . $concatenated_pass, true);
             $result .= $md5[$i];
         }
