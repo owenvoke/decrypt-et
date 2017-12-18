@@ -87,7 +87,7 @@ class Decrypt extends Implementations
 
         // Replace the redirect JS code function
         $this->decrypted = preg_replace(
-            '/<script type\=\"text\/javascript\">eval\(function\(p,a,c,k,e,d\)\{[\s\S]*?<\/script>/i',
+            '/<script type="text\/javascript">eval\(function\(p,a,c,k,e,d\)\{[\s\S]*?<\/script>/i',
             '',
             json_decode($data, true)
         );
